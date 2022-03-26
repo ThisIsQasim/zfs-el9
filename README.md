@@ -6,7 +6,7 @@ OpenZFS packages built for EL9 based distros. Tested on CentOS Stream 9.
 
 ```
 curl -L -o /etc/yum.repos.d/zfs-el9.repo https://github.com/ThisIsQasim/zfs-el9/raw/main/zfs-el9.repo
-yum install -y zfs zfs-kmod
+yum install -y zfs
 ```
 or if you are running on a kernel that doesn't have a `kmod` package available use `dkms`
 
