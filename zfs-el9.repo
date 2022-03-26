@@ -1,0 +1,5 @@
+[zfs-el9]
+name=ZFS EL9
+baseurl=https://github.com/ThisIsQasim/zfs-el9/raw/main
+enabled=1
+gpgcheck=0
