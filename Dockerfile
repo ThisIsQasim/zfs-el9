@@ -22,8 +22,7 @@ RUN dnf install --skip-broken -y \
        python3-devel \
        python3-setuptools \
        python3-cffi \
-       libffi-devel \
-       https://kojihub.stream.centos.org/kojifiles/packages/ncompress/4.2.4.4/21.el9/x86_64/ncompress-4.2.4.4-21.el9.x86_64.rpm
+       libffi-devel
 RUN dnf install --skip-broken -y \
        --enablerepo=epel \
        --enablerepo=powertools \
@@ -31,7 +30,7 @@ RUN dnf install --skip-broken -y \
        python3-packaging \
        dkms \
        libtirpc-devel
-ARG ZFS_VERSION=2.1.4
+ARG ZFS_VERSION=2.1.5
 RUN curl -LO https://github.com/openzfs/zfs/releases/download/zfs-${ZFS_VERSION}/zfs-${ZFS_VERSION}.tar.gz && \
     tar xzf zfs-${ZFS_VERSION}.tar.gz && \
     rm -rf zfs-${ZFS_VERSION}.tar.gz.
