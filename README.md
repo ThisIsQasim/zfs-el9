@@ -1,3 +1,10 @@
+Official support for EL9 is live. This is archived.
+
+```
+dnf install https://zfsonlinux.org/epel/zfs-release-2-2$(rpm --eval "%{dist}").noarch.rpm
+```
+---
+
 # ZFS for EL9
 
 OpenZFS packages built for EL9 based distros. Tested on CentOS Stream 9.
